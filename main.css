@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(89, 83, 135, 0.8);
+  color: #fff; }
+
+#scoreWrapper {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(89, 83, 135, 0.8);
+  color: #fff;
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  z-index: 1000; }
+
+#scoreWrapper h1 {
+  padding-top: 150px;
+  font-size: 70px; }
+
+#scoreWrapper h3 {
+  font-size: 70px;
+  margin: 50px auto; }
+
+#scoreWrapper label {
+  font-size: 60px; }
+
+#name {
+  margin: 30px;
+  width: 380px;
+  height: 50px;
+  padding: 7px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+  text-align: center;
+  font-size: 60px;
+  outline: none; }
+
+#bodovi {
+  display: none; }
+
+#dugme {
+  margin: 30px;
+  padding: 15px;
+  width: 200px;
+  height: 70px;
+  font-size: 28px;
+  border: 1px solid transparent;
+  border-radius: 60px;
+  background: #fff;
+  color: #595387;
+  transition: 0.2s all ease;
+  outline: none; }
+
+#dugme:hover {
+  background: rgba(89, 83, 135, 0.6);
+  color: #fff;
+  transition: 0.2s all ease; }
+
+.container {
+  padding: 2px;
+  display: flex;
+  justify-content: flex-start; }
+
+.scoreContainer {
+  padding: 50px;
+  text-align: center;
+  height: 500px;
+  position: absolute;
+  left: 3%;
+  z-index: 100; }
+
+.scoreContainer h1 {
+  font-size: 60px;
+  border-bottom: 5px solid #fff; }
+
+.scoreContainer p {
+  font-size: 50px; }
+
+.ladder {
+  position: absolute;
+  padding: 50px;
+  right: 3%; }
+
+.ladder h1 {
+  font-size: 60px;
+  border-bottom: 5px solid #fff; }
+
+#lista li {
+  font-size: 30px; }
+
+.bodovi {
+  font-size: 37px;
+  color: #e85c5c; }
+
+.field {
+  border: 1px solid green; }
+
+.snakeBody {
+  background: linear-gradient(to bottom, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%);
+  border: 1px solid #000;
+  border-radius: 5px;
+  opacity: 1; }
+
+.food {
+  background: linear-gradient(to bottom, #ff1a00 20%, #ff1a00 51%, #ff1a00 100%);
+  border: 1px solid #000;
+  border-radius: 12px; }
+
+.container {
+  padding: 2px;
+  display: flex;
+  justify-content: flex-start; }
+
+#wrapper {
+  width: 99vh;
+  height: 99vh;
+  border: 1px solid black;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #b4df5b 0%, #b4df5b 100%);
+  display: grid;
+  grid-template-columns: repeat(30, auto);
+  grid-template-rows: repeat(30, auto); }
+
+.snakeBody {
+  background: linear-gradient(to bottom, #f0b7a1 0%, #8c3310 50%, #752201 51%, #bf6e4e 100%);
+  border: 1px solid #000;
+  border-radius: 5px;
+  opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */

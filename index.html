@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Snake Game</title>
+  </head>
+  <body onkeydown="snake.moveSnake(event)">
+    <div id="scoreWrapper">
+      <h1>Osvojeni bodovi:</h1>
+      <h3 id="finalScore"></h3>
+      <form action="http://filipkovacevic.com/zmijica/score.php" method="POST">
+         <label>Ime:</label><br>
+         <input type="text" name="name" id="name"></br>
+         <input type="text" value="0" name="bodovi" id="bodovi"></br>
+         <input type="submit" value="zapamti" id="dugme">
+      </form>
+   </div>
+   <!-- scoreWrapper END -->
+
+   <!-- contaier START -->
+   <div class="container">
+      <!-- scoreContainer START -->
+      <div class="scoreContainer">
+         <h1>Bodovi:</h1>
+         <p id="point">0</p>
+      </div>
+      <!-- scoreContainer END -->
+      <div class="ladder">
+         <h1>Top Lista:</h1>
+         <h3 id="txtHint"></h3>
+      </div>
+
+      <!-- WRAPPER START -->
+      <div id="wrapper">
+         <!-- POLJE START -->
+            <!-- mesto gde ce se generisati divovi sa klasom polje -->
+         <!-- POLJE END -->
+      </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
+    
+  </body>
+</html>
