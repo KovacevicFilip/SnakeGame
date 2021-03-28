@@ -57,9 +57,9 @@ class Snake {
             
             if (event.keyCode == 38) {
                console.log("UP");
-               if(dxy.dy != 1){ // uslov u uslovu je postavljen da snakeBody ne bi mogla da krene unazad ili da bude kraj igre, a da se snakeBody nije sudarila,
-                  dxy.dx = 0;   // tj da joj se glava poklopi sa prvim poljem .. ukoliko se to dogodi, vrednosi dxy.dx i dxy.dy se nece promeniti posto one ni u jednom
-                  dxy.dy = -1;   // slucaju ne smeju biti istovremeno jednake nuli, jer bi to zaustavilo zmijicu
+               if(dxy.dy != 1){ 
+                  dxy.dx = 0;   
+                  dxy.dy = -1;   
                }
             };
    
